@@ -1,0 +1,131 @@
+@import "tailwindcss" source(none);
+@source "../index.html";
+@source "../foundation.html";
+@source "../assets/site.js";
+
+/* All site colors and font choices live here. */
+@theme {
+  --color-*: initial;
+  --color-brand: #0190d6;
+  --color-ink: #031b35;
+  --color-dark: #04162c;
+  --color-soft: #eaf2f5;
+  --color-line: #d0deee;
+  --color-muted: #435364;
+  --color-review: #0f725b;
+  --color-stars: #fe8300;
+  --color-online: #12d616;
+  --color-nav-line: #324355;
+  --color-menu: #051e3a;
+  --color-brand-light: #34a6de;
+  --color-ink-light: #36495d;
+  --color-rating: #09384f;
+  --color-placeholder: #aabdd2;
+  --color-service: #0792d6;
+  --color-photo-shade: #1c1e29;
+  --color-call-ring: #043253;
+  --color-footer-line: #1b2c40;
+  --color-white: #ffffff;
+  --font-body: "Inter", Arial, sans-serif;
+  --font-heading: "Inter", Arial, sans-serif;
+  --font-accent: "Better Times", cursive;
+  --breakpoint-*: initial;
+  --breakpoint-sm: 36rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 62rem;
+  --breakpoint-xl: 75rem;
+  --breakpoint-2xl: 87.5rem;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/inter-v8-latin-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/inter-v8-latin-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/inter-v8-latin-800.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Better Times";
+  src: url("./fonts/BetterTimes.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  body { @apply bg-white font-body text-ink antialiased; line-height: 1.7; }
+  ::selection { @apply bg-brand text-white; }
+  [hidden] { display: none !important; }
+  :focus-visible { outline: 3px solid var(--color-brand); outline-offset: 5px; }
+  button, summary { cursor: pointer; }
+  summary { list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+}
+@font-face {
+  font-family: "Reference Icons";
+  src: url("./fonts/fontello.woff2") format("woff2");
+  font-display: block;
+}
+@layer components {
+  .site-container { @apply mx-auto w-full px-3 sm:max-w-[576px] md:max-w-[768px] lg:max-w-[992px] xl:max-w-[1440px]; }
+  .icon { font-family: "Reference Icons"; font-style: normal; font-weight: 400; }
+  .button { @apply inline-flex items-center justify-center gap-5 border-2 border-brand bg-brand px-[26px] py-[18px] text-center text-[.92rem] font-semibold text-white uppercase transition-colors hover:bg-transparent hover:text-brand; }
+  .nav-link { @apply block border-b border-transparent px-3 py-4 text-[.9rem] font-semibold uppercase transition-colors hover:border-brand hover:text-brand lg:px-2.5 lg:py-[25px] xl:px-[25px] xl:py-[35px] xl:text-[.95rem]; }
+  .field { @apply block h-[75px] w-full min-w-0 border border-line bg-white px-6 py-2.5 text-ink placeholder:text-placeholder; }
+  .section-heading { @apply py-2.5 font-heading text-[28px] leading-[1.2] font-extrabold uppercase xl:text-[38.4px]; }
+  .review-dot { @apply h-3 w-3 rounded-full border border-brand bg-transparent; }
+  .review-dot[aria-pressed="true"] { @apply bg-brand; }
+  .hero-scene { background-image: var(--image-hero, url('./images/home-banner.jpg')); }
+  .hero-review { @apply relative mt-[66px] min-h-[300px] bg-brand p-8 text-white md:p-12 lg:absolute lg:top-1/2 lg:right-3 lg:mt-[30px] lg:min-h-[340px] lg:w-[420px]; }
+  .benefit { @apply relative min-h-[200px] shrink-0 basis-full snap-center overflow-hidden text-white md:basis-[calc((100%-48px)/3)]; }
+  .benefit-circle { @apply absolute -top-[25px] -left-[25px] flex h-[120px] w-[120px] items-center justify-center rounded-full text-[34px] lg:h-[150px] lg:w-[150px] lg:text-5xl; }
+  .benefit-copy { @apply pt-[25px] pr-4 pl-[120px] lg:pl-[145px]; }
+  .preheading { @apply block py-[15px] font-accent text-[35.2px] leading-[1.2] text-brand; }
+  .section-intro { @apply mx-auto mb-12 text-center lg:w-2/3; }
+  .body-copy { @apply text-base leading-[1.7] xl:text-[17.6px]; }
+  .service-card { @apply relative w-full max-w-[400px] shrink-0 basis-[85%] snap-center overflow-hidden sm:basis-[calc((100%-24px)/2)] md:max-w-none; }
+  .service-summary { @apply relative block aspect-[336/392] cursor-pointer; }
+  .service-summary::after { content: ''; @apply pointer-events-none absolute inset-0 bg-linear-to-b from-photo-shade/0 to-photo-shade/60; }
+  .service-details { @apply absolute inset-0 z-10 flex flex-col items-center justify-center overflow-y-auto bg-service px-4 py-6 text-center text-white; }
+  .service-heading { @apply py-2.5 font-heading text-lg leading-[1.2] font-extrabold uppercase xl:text-[22.4px]; }
+  .reason-item { @apply relative pl-24; }
+  .reason-number { @apply absolute top-0 left-0 flex h-[60px] w-[60px] items-center justify-center rounded-full border border-line; }
+  .reason-item:not(:last-child)::before { content: ''; @apply absolute top-[60px] bottom-[-48px] left-[30px] w-px bg-line; }
+  .guarantee-card { @apply flex min-h-[170px] flex-col items-center justify-center bg-white px-3 py-5 text-center text-ink xl:min-h-[210px] xl:px-[30px]; }
+  .process-background { background: linear-gradient(color-mix(in srgb, var(--color-dark) 90%, transparent), color-mix(in srgb, var(--color-dark) 90%, transparent)), var(--image-process, url('./images/our-process-bg.jpg')) center / cover; }
+  .area-tab { @apply relative w-full border-b border-white/20 border-l-[20px] border-l-brand px-3 py-2.5 text-left text-sm font-semibold uppercase transition-colors hover:bg-white/10 lg:px-5 lg:text-base; }
+  .area-tab[aria-selected="true"] { @apply bg-white text-brand; }
+  .area-list { @apply columns-2 gap-4 sm:columns-3; }
+  .area-list li { @apply relative break-inside-avoid py-2.5 pl-5 text-sm font-semibold lg:pl-6 lg:text-base; }
+  .area-list li::before { content: '\e836'; font-family: 'Reference Icons'; @apply absolute left-0 text-brand; }
+  .area-list a { @apply block transition-transform hover:translate-x-1 hover:text-brand; }
+  .footer-heading { @apply pb-6 font-heading text-lg leading-[1.2] font-extrabold uppercase xl:text-2xl; }
+  .footer-links a { @apply inline-block py-[3px] transition-colors hover:text-brand; }
+  .social-link { @apply flex h-10 w-10 items-center justify-center rounded-full bg-white text-xl text-ink transition-colors hover:bg-brand xl:h-[50px] xl:w-[50px]; }
+  .gallery-track { animation: gallery-scroll 36s linear infinite; }
+  .gallery-track-reverse { animation-direction: reverse; animation-duration: 42s; }
+  .project-gallery:hover .gallery-track, .project-gallery:focus-within .gallery-track,
+  .project-gallery[data-paused="true"] .gallery-track { animation-play-state: paused; }
+}
+@keyframes gallery-scroll { from { transform: translateY(0); } to { transform: translateY(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .project-gallery:not([data-paused="false"]) .gallery-track { animation: none; }
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0s !important; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}

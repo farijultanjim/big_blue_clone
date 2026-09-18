@@ -1,0 +1,17 @@
+{
+  "name": "plumbing-homepage",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Static HTML homepage with locally compiled Tailwind CSS",
+  "scripts": {
+    "check": "node --check assets/site.js && node --check assets/site-config.js && node reference/verify-homepage.mjs",
+    "start": "node preview.mjs",
+    "build": "tailwindcss -i ./styles/theme.css -o ./assets/site.css --minify",
+    "watch": "tailwindcss -i ./styles/theme.css -o ./assets/site.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.3",
+    "linkedom": "0.18.13",
+    "tailwindcss": "4.3.3"
+  }
+}
