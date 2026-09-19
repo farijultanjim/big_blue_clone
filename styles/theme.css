@@ -105,6 +105,12 @@
   .site-container {
     @apply mx-auto w-full px-3 sm:max-w-[576px] md:max-w-[768px] lg:max-w-[992px] xl:max-w-[1440px];
   }
+  .utility-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+  }
   .icon {
     font-family: 'Reference Icons';
     font-style: normal;
@@ -279,4 +285,98 @@
   html {
     scroll-behavior: smooth;
   }
+}
+
+/* ===== 07. GSAP MOTION AND MICRO-INTERACTION HELPERS ===== */
+.button-sheen {
+  position: relative;
+  overflow: hidden;
+}
+.button-sheen::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.28), transparent);
+  transform: skewX(-20deg);
+  transition: none;
+  pointer-events: none;
+}
+.button-sheen:hover::after {
+  left: 120%;
+  transition: left 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* 24/7 Live beacon pulse */
+@keyframes beacon-pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(18, 214, 22, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(18, 214, 22, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(18, 214, 22, 0);
+  }
+}
+.pulse-online {
+  animation: beacon-pulse 2s infinite cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+/* Header dynamic scroll shadow & glass effect */
+header.header-scrolled {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.4s ease;
+}
+
+/* Smooth zoom for service cards */
+.service-summary img {
+  transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+/* Process track fill line */
+.process-line-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: var(--color-brand);
+  box-shadow: 0 0 10px var(--color-brand);
+}
+
+/* Floating mobile emergency button gentle attention pulse */
+@keyframes emergency-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+.emergency-pulse {
+  animation: emergency-pulse 2.5s infinite ease-in-out;
+}
+
+/* Plumbing mega menu dropdown & scrollbar styling */
+#plumbing-dropdown-panel::-webkit-scrollbar {
+  width: 5px;
+}
+#plumbing-dropdown-panel::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+#plumbing-dropdown-panel::-webkit-scrollbar-thumb {
+  background: var(--color-brand);
+  border-radius: 4px;
+}
+#plumbing-menu[open] > summary,
+#plumbing-menu:hover > summary {
+  color: var(--color-brand);
 }

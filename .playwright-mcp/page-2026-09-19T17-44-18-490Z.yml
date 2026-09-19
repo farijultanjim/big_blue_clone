@@ -1,0 +1,243 @@
+- generic [active] [ref=f4e1]:
+  - link "Skip to content" [ref=f4e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f4e3]:
+    - generic [ref=f4e5]:
+      - generic [ref=f4e6]: Open Now — 24/7 Plumbing
+      - generic [ref=f4e9]:
+        - generic [aria-hidden] [ref=f4e10]: ★★★★★
+        - text: Sample 5-Star Rating
+      - group [ref=f4e11]:
+        - generic "Find by Zip Code" [ref=f4e12] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f4e13]: 
+          - text: Find by Zip Code
+      - group [ref=f4e16]:
+        - generic "Search homepage" [ref=f4e17] [cursor=pointer]:
+          - generic [ref=f4e18]: Search...
+          - generic [aria-hidden] [ref=f4e19]: 
+    - navigation "Main navigation" [ref=f4e20]:
+      - generic [ref=f4e21]:
+        - link "CedarFlow Plumbing home" [ref=f4e22] [cursor=pointer]:
+          - /url: ./
+          - img "CedarFlow Plumbing" [ref=f4e23]
+        - 'link "Call a 24/7 Plumber: (202) 555-0147" [ref=f4e24] [cursor=pointer]':
+          - /url: tel:+12025550147
+          - generic [aria-hidden] [ref=f4e25]: 
+          - generic [ref=f4e26]:
+            - generic [ref=f4e27]: "Call a 24/7 Plumber:"
+            - generic [ref=f4e28]: (202) 555-0147
+        - list [ref=f4e30]:
+          - listitem [ref=f4e31]:
+            - link "About Us" [ref=f4e32] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=f4e33]:
+            - group [ref=f4e34]:
+              - generic "Plumbing" [ref=f4e35] [cursor=pointer]
+          - listitem [ref=f4e39]:
+            - link "Locations" [ref=f4e40] [cursor=pointer]:
+              - /url: "#locations"
+          - listitem [ref=f4e41]:
+            - link "Blog" [ref=f4e42] [cursor=pointer]:
+              - /url: "#blog"
+          - listitem [ref=f4e43]:
+            - link "Contact Us" [ref=f4e44] [cursor=pointer]:
+              - /url: "#quote"
+  - main [ref=f4e45]:
+    - region [ref=f4e46]:
+      - generic [ref=f4e49]:
+        - generic [ref=f4e50]:
+          - generic [ref=f4e51]: Sample 5-Star Rating3 Example Reviews
+          - generic [aria-hidden] [ref=f4e52]: ★
+        - heading "CedarFlow Plumbing keeps Mapleford flowing" [level=1] [ref=f4e54]
+    - region "Our service benefits" [ref=f4e55]:
+      - generic "Service benefits; scroll horizontally on mobile" [ref=f4e57]:
+        - article [ref=f4e58]:
+          - generic [ref=f4e59]:
+            - heading "No Hidden Fees" [level=2] [ref=f4e60]
+            - paragraph [ref=f4e61]: Clear explanations and an agreed scope before work begins.
+        - article [ref=f4e62]:
+          - generic [ref=f4e63]:
+            - heading "Helpful Local Service" [level=2] [ref=f4e64]
+            - paragraph [ref=f4e65]: Ask about available offers when arranging your visit.
+    - region [ref=f4e66]:
+      - generic [ref=f4e69]:
+        - paragraph [ref=f4e70]: Quick, Easy & Free
+        - heading "Tell us what needs fixing" [level=2] [ref=f4e71]
+        - paragraph [ref=f4e72]: Tell CedarFlow Plumbing about your plumbing problem. Share a few details below so our team can discuss the work, answer your questions, and help you plan the next step.
+    - region [ref=f4e75]:
+      - generic [ref=f4e76]:
+        - generic [ref=f4e77]:
+          - paragraph [ref=f4e78]: Industry-Leading Plumbing Solutions
+          - heading "Plumbing Help for Your Property" [level=2] [ref=f4e79]
+        - generic "Plumbing services; swipe for more on mobile" [ref=f4e80]
+    - region [ref=f4e82]:
+      - generic [ref=f4e83]:
+        - generic [ref=f4e84]:
+          - paragraph [ref=f4e85]: Expect Nothing But The Best
+          - heading "Three Ways We Make Plumbing Easier" [level=2] [ref=f4e86]
+        - list [ref=f4e88]
+    - region "Let’s Talk About Payment Options" [ref=f4e89]:
+      - generic [ref=f4e90]:
+        - generic [ref=f4e91]:
+          - paragraph [ref=f4e92]: Making Hard Times; Easy.
+          - blockquote [ref=f4e93]: Before any work begins, ask us about the proposed cost and available ways to pay. Any payment arrangement depends on the work and agreed terms; this demo does not advertise a finance-provider partnership.
+          - generic [ref=f4e94]:
+            - generic [ref=f4e95]:
+              - generic [aria-hidden] [ref=f4e96]: 
+              - heading "Understand the Cost" [level=3] [ref=f4e98]
+            - generic [ref=f4e99]:
+              - generic [aria-hidden] [ref=f4e100]: 
+              - heading "Ask Before You Book" [level=3] [ref=f4e102]
+        - img "Two overlapping CedarFlow payment concept cards" [ref=f4e103]
+    - region "Need a Hand With Your Plumbing?" [ref=f4e104]
+    - region [ref=f4e108]:
+      - generic [ref=f4e110]:
+        - paragraph [ref=f4e111]: Who are we?
+        - heading "Meet CedarFlow Plumbing" [level=2] [ref=f4e112]
+        - paragraph [ref=f4e113]: CedarFlow Plumbing is a fictional local plumbing business created for this website preview. Our sample brand is built around approachable service, clear explanations, and thoughtful care for homes and workplaces.
+    - region "What Matters to Our Team" [ref=f4e117]:
+      - list [ref=f4e121]
+    - region "Customer Stories — Demo Examples" [ref=f4e122]
+    - region "Every Property Has a Different Story" [ref=f4e126]:
+      - generic "Plumbing project gallery" [ref=f4e129]:
+        - button "Pause gallery" [ref=f4e133] [cursor=pointer]
+    - region [ref=f4e134]:
+      - generic [ref=f4e135]:
+        - generic [ref=f4e136]:
+          - paragraph [ref=f4e137]: Plumbing in 4 Easy Steps
+          - heading "We Made Plumbing Easy" [level=2] [ref=f4e138]
+          - paragraph [ref=f4e139]: A clear process makes repairs easier to arrange. Here is how a typical CedarFlow enquiry moves from the first conversation to the final handover.
+        - list [ref=f4e140]:
+          - listitem [aria-hidden]
+    - region "Service Areas" [ref=f4e141]:
+      - generic [ref=f4e144]:
+        - generic [ref=f4e145]:
+          - heading "Top Suburbs" [level=3] [ref=f4e146]
+          - tablist "Service regions" [ref=f4e147]
+        - generic [ref=f4e148]:                                                                                                           
+    - region "Helpful Plumbing Notes" [ref=f4e149]
+    - region "Questions About a Plumbing Problem?" [ref=f4e153]:
+      - generic [aria-hidden] [ref=f4e156]: 
+    - region "Let’s Plan Your Next Step" [ref=f4e158]:
+      - generic [ref=f4e159]:
+        - generic [ref=f4e160]:
+          - heading "A Preview of Your Future Reviews" [level=2] [ref=f4e161]
+          - paragraph [ref=f4e162]: These sample reviews illustrate the experience CedarFlow aims to provide.
+        - generic [ref=f4e163]:
+          - paragraph [ref=f4e165]: Clear communication
+          - paragraph [ref=f4e167]: Thoughtful service
+          - paragraph [ref=f4e169]: Practical advice
+  - contentinfo [ref=f4e170]:
+    - generic [ref=f4e171]:
+      - generic [ref=f4e172]:
+        - heading "Get the latest offers & updates" [level=2] [ref=f4e173]: Get the latestoffers & updates
+        - generic [ref=f4e174]:
+          - generic [ref=f4e175]: Email address for offers and updates
+          - generic [ref=f4e176]:
+            - textbox "Email address for offers and updates" [ref=f4e177]:
+              - /placeholder: Enter Your Address
+            - button "View More" [ref=f4e178] [cursor=pointer]:
+              - text: View More
+              - generic [aria-hidden] [ref=f4e179]: "--->"
+      - generic [ref=f4e180]:
+        - generic [ref=f4e181]:
+          - heading "Our Services" [level=2] [ref=f4e182]
+          - list [ref=f4e183]:
+            - listitem [ref=f4e184]:
+              - link "Plumbing" [ref=f4e185] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f4e186]:
+              - link "Commercial" [ref=f4e187] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f4e188]:
+              - link "Strata" [ref=f4e189] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f4e190]:
+              - link "Real Estate" [ref=f4e191] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f4e192]:
+              - link "Drainage" [ref=f4e193] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f4e194]:
+              - link "Hot Water" [ref=f4e195] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f4e196]:
+              - link "Gasfitting" [ref=f4e197] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f4e198]:
+              - link "View More" [ref=f4e199] [cursor=pointer]:
+                - /url: "#services"
+        - generic [ref=f4e200]:
+          - heading "Quick Links" [level=2] [ref=f4e201]
+          - list [ref=f4e202]:
+            - listitem [ref=f4e203]:
+              - link "Help Centre" [ref=f4e204] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f4e205]:
+              - link "Testimonials" [ref=f4e206] [cursor=pointer]:
+                - /url: "#testimonials"
+            - listitem [ref=f4e207]:
+              - link "Careers" [ref=f4e208] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f4e209]:
+              - link "Business Values" [ref=f4e210] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f4e211]:
+              - link "Our Blog" [ref=f4e212] [cursor=pointer]:
+                - /url: "#blog"
+            - listitem [ref=f4e213]:
+              - link "HTML Sitemap" [ref=f4e214] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f4e215]:
+              - link "Contact Us" [ref=f4e216] [cursor=pointer]:
+                - /url: "#contact"
+        - list [ref=f4e218]:
+          - listitem [ref=f4e219]:
+            - link "Willow Coast" [ref=f4e220] [cursor=pointer]:
+              - /url: "#contact"
+          - listitem [ref=f4e221]:
+            - link "Northbank" [ref=f4e222] [cursor=pointer]:
+              - /url: "#contact"
+          - listitem [ref=f4e223]:
+            - link "Cedar Valley" [ref=f4e224] [cursor=pointer]:
+              - /url: "#contact"
+        - generic [ref=f4e225]:
+          - heading "It’s plumbing, but we do it better; because we know what you want." [level=2] [ref=f4e226]
+          - generic [ref=f4e227]:
+            - link "Book Online or Call" [ref=f4e228] [cursor=pointer]:
+              - /url: "#contact"
+            - link "(202) 555-0147" [ref=f4e229] [cursor=pointer]:
+              - /url: tel:+12025550147
+      - generic [ref=f4e230]:
+        - generic [ref=f4e231]:
+          - generic [aria-hidden] [ref=f4e232]: 
+          - generic [ref=f4e233]: 24 Willow Lane, Mapleford, EX 00000
+        - generic [ref=f4e234]:
+          - generic [aria-hidden] [ref=f4e235]: 
+          - generic [ref=f4e236]: Every day, 24 hours
+        - generic [ref=f4e237]:
+          - generic [aria-hidden] [ref=f4e238]: 
+          - link "hello@cedarflow.example" [ref=f4e239] [cursor=pointer]:
+            - /url: mailto:hello@cedarflow.example
+        - generic [ref=f4e240]:
+          - link "Ask about our social profiles" [ref=f4e241] [cursor=pointer]:
+            - /url: "#contact"
+            - generic [aria-hidden] [ref=f4e242]: 
+          - link "Ask about our social profiles" [ref=f4e243] [cursor=pointer]:
+            - /url: "#contact"
+            - generic [aria-hidden] [ref=f4e244]: 
+          - link "Ask about our social profiles" [ref=f4e245] [cursor=pointer]:
+            - /url: "#contact"
+            - generic [aria-hidden] [ref=f4e246]: 
+          - link "Ask about our social profiles" [ref=f4e247] [cursor=pointer]:
+            - /url: "#contact"
+            - generic [aria-hidden] [ref=f4e248]: 
+      - generic [ref=f4e249]:
+        - paragraph [ref=f4e250]: © 2026 CedarFlow Plumbing. All rights reserved.
+        - paragraph [ref=f4e251]:
+          - link "Request Service Terms" [ref=f4e252] [cursor=pointer]:
+            - /url: "#contact"
+          - text: —
+          - link "Ask About Privacy" [ref=f4e253] [cursor=pointer]:
+            - /url: "#contact"
+      - paragraph [ref=f4e254]: Fictional demo business. Contact details, locations, and customer stories are placeholders.
