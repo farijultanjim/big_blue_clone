@@ -1,4 +1,4 @@
-# CedarFlow Plumbing
+﻿# CedarFlow Plumbing
 
 A static homepage built with HTML, Tailwind CSS 4, and vanilla JavaScript.
 
@@ -51,7 +51,7 @@ Run the build after changing HTML utility classes or theme styles. All npm packa
 
 ## Current content and behavior
 
-CedarFlow Plumbing is a fictional demo company. Its contact details, service locations, and customer stories are placeholders. Original images and logos remain pending the image-replacement stage.
+CedarFlow Plumbing is a fictional demo company. Its contact details, service locations, and customer stories are placeholders. The homepage uses original AI-generated photos and a new CedarFlow vector wordmark. The downloaded reference images have been removed. The approved transparent hero is cropped at the hips in the hero section and reused in full in supporting sections. Current image sources are in image-review/; superseded images and failed drafts have been removed.
 
 The quote, contact, and newsletter forms validate locally and show demo confirmations. They do not send data. Navigation stays on the homepage; phone and email links use the configured contact details.
 

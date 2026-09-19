@@ -131,10 +131,23 @@
   }
   /* ===== Hero: background and testimonial panel ===== */
   .hero-scene {
-    background-image: var(--image-hero, url('./images/home-banner.jpg'));
+    background-image: var(--image-hero, url('./images/cedarflow-home-exterior-v1.png'));
+  }
+  /* Crop the approved alpha image at the hips without regenerating its face. */
+  .hero-portrait {
+    @apply pointer-events-none absolute bottom-0 left-[54%] hidden h-[480px] w-[440px] -translate-x-1/2 overflow-hidden lg:block xl:h-[570px] xl:w-[540px];
+  }
+  .hero-portrait-image {
+    @apply absolute -top-2 left-1/2 h-auto w-[640px] max-w-none -translate-x-1/2 xl:w-[760px];
+  }
+  .call-portrait {
+    @apply pointer-events-none absolute bottom-0 left-1/2 hidden h-[480px] w-[360px] -translate-x-1/2 overflow-hidden lg:block xl:h-[570px] xl:w-[440px];
+  }
+  #call-us .site-container > :last-child {
+    @apply lg:col-start-3;
   }
   .hero-review {
-    @apply relative mt-[66px] min-h-[300px] bg-brand p-8 text-white md:p-12 lg:absolute lg:top-1/2 lg:right-3 lg:mt-[30px] lg:min-h-[340px] lg:w-[420px];
+    @apply relative mt-[66px] min-h-[300px] bg-brand p-8 text-white md:p-12 lg:absolute lg:top-1/2 lg:right-3 lg:mt-[30px] lg:min-h-[340px] lg:w-[280px] lg:p-6 xl:w-[420px] xl:p-12;
   }
   /* ===== Benefits strip ===== */
   .benefit {
@@ -195,7 +208,7 @@
         color-mix(in srgb, var(--color-dark) 90%, transparent),
         color-mix(in srgb, var(--color-dark) 90%, transparent)
       ),
-      var(--image-process, url('./images/our-process-bg.jpg')) center / cover;
+      var(--image-process, url('./images/cedarflow-tools-background-v1.png')) center / cover;
   }
   /* ===== Service areas: tabs and neighbourhood lists ===== */
   .area-tab {

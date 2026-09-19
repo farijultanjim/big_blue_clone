@@ -1,0 +1,1101 @@
+- generic [active] [ref=f1e1]:
+  - link "Skip to content" [ref=f1e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f1e3]:
+    - generic [ref=f1e5]:
+      - generic [ref=f1e6]: Open Now — 24/7 Plumbing
+      - generic [ref=f1e8]:
+        - generic [aria-hidden] [ref=f1e9]: ★★★★★
+        - text: Sample 5-Star Rating
+      - group [ref=f1e10]:
+        - generic "Find by Zip Code" [ref=f1e11] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f1e12]: 
+          - text: Find by Zip Code
+          - generic [aria-hidden] [ref=f1e13]: ⌄
+      - group [ref=f1e14]:
+        - generic "Search homepage" [ref=f1e15] [cursor=pointer]:
+          - generic [ref=f1e16]: Search...
+          - generic [aria-hidden] [ref=f1e17]: 
+    - navigation "Main navigation" [ref=f1e18]:
+      - generic [ref=f1e19]:
+        - link "CedarFlow Plumbing home" [ref=f1e20] [cursor=pointer]:
+          - /url: ./
+          - img "CedarFlow Plumbing" [ref=f1e21]
+        - list [ref=f1e23]:
+          - listitem [ref=f1e24]:
+            - link "About Us" [ref=f1e25] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=f1e26]:
+            - group [ref=f1e27]:
+              - generic "Plumbing" [ref=f1e28] [cursor=pointer]: Plumbing ⌄
+          - listitem [ref=f1e29]:
+            - link "Locations" [ref=f1e30] [cursor=pointer]:
+              - /url: "#locations"
+          - listitem [ref=f1e31]:
+            - link "Blog" [ref=f1e32] [cursor=pointer]:
+              - /url: "#blog"
+          - listitem [ref=f1e33]:
+            - link "Contact Us" [ref=f1e34] [cursor=pointer]:
+              - /url: "#quote"
+        - 'link "Call a 24/7 Plumber: (202) 555-0147" [ref=f1e35] [cursor=pointer]':
+          - /url: tel:+12025550147
+          - generic [aria-hidden] [ref=f1e36]: 
+          - generic [ref=f1e37]:
+            - generic [ref=f1e38]: "Call a 24/7 Plumber:"
+            - generic [ref=f1e39]: (202) 555-0147
+  - main [ref=f1e40]:
+    - region [ref=f1e41]:
+      - generic:
+        - img "CedarFlow Plumbing plumber"
+      - generic [ref=f1e43]:
+        - generic [ref=f1e44]:
+          - generic [ref=f1e45]:
+            - generic [ref=f1e46]: Sample 5-Star Rating3 Example Reviews
+            - generic [aria-hidden] [ref=f1e47]: ★
+          - generic [ref=f1e48]:
+            - heading "CedarFlow Plumbing keeps Mapleford flowing" [level=1] [ref=f1e49]
+            - paragraph [ref=f1e50]: Friendly help for leaks, drains, hot water, and everyday repairs. Serving Mapleford, Willow Coast, Northbank, and Cedar Valley.
+            - link "Schedule an Appointment" [ref=f1e51] [cursor=pointer]:
+              - /url: "#quote"
+              - text: Schedule an Appointment
+              - generic [aria-hidden] [ref=f1e52]: "--->"
+        - generic "Customer testimonial" [ref=f1e53]:
+          - generic [aria-hidden] [ref=f1e54]: ”
+          - generic "5 out of 5 stars" [ref=f1e55]: ★★★★★
+          - blockquote [ref=f1e56]:
+            - paragraph [ref=f1e57]: “CedarFlow Plumbing made a stressful kitchen leak easy to deal with. The plumber explained the options, kept the work area tidy, and walked us through the repair before leaving.”
+            - generic [ref=f1e58]: Jamie Parker · Sample review
+    - region "Our service benefits" [ref=f1e59]:
+      - generic "Service benefits; scroll horizontally on mobile" [ref=f1e61]:
+        - article [ref=f1e62]:
+          - generic [aria-hidden] [ref=f1e64]: 
+          - generic [ref=f1e65]:
+            - heading "No Hidden Fees" [level=2] [ref=f1e66]
+            - paragraph [ref=f1e67]: Clear explanations and an agreed scope before work begins.
+        - article [ref=f1e68]:
+          - generic [aria-hidden] [ref=f1e70]: 
+          - generic [ref=f1e71]:
+            - heading "Helpful Local Service" [level=2] [ref=f1e72]
+            - paragraph [ref=f1e73]: Ask about available offers when arranging your visit.
+        - article [ref=f1e74]:
+          - generic [aria-hidden] [ref=f1e76]: 
+          - generic [ref=f1e77]:
+            - heading "Clear Quotes, Simple Choices" [level=2] [ref=f1e78]
+            - paragraph [ref=f1e79]: Know the proposed cost before deciding how to proceed.
+    - region [ref=f1e80]:
+      - generic [ref=f1e81]:
+        - generic [ref=f1e82]:
+          - generic [ref=f1e83]:
+            - paragraph [ref=f1e84]: Quick, Easy & Free
+            - heading "Tell us what needs fixing" [level=2] [ref=f1e85]
+            - paragraph [ref=f1e86]: Tell CedarFlow Plumbing about your plumbing problem. Share a few details below so our team can discuss the work, answer your questions, and help you plan the next step.
+          - generic [ref=f1e87]:
+            - generic [ref=f1e88]:
+              - generic [ref=f1e90]:
+                - paragraph [ref=f1e91]: Jamie Parker · Sample review
+                - text: ★★★★★
+              - blockquote [ref=f1e92]: “CedarFlow Plumbing made a stressful kitchen leak easy to deal with. The plumber explained the options, kept the work area tidy, and walked us through the repair before leaving.”
+              - generic "Choose testimonial" [ref=f1e93]:
+                - button "Show Jamie’s review" [pressed] [ref=f1e94] [cursor=pointer]
+                - button "Show Morgan’s review" [ref=f1e95] [cursor=pointer]
+                - button "Show Taylor’s review" [ref=f1e96] [cursor=pointer]
+                - button "Pause reviews" [ref=f1e97] [cursor=pointer]
+            - generic [ref=f1e98]:
+              - generic [ref=f1e99]:
+                - paragraph [ref=f1e100]: "3"
+                - paragraph [ref=f1e101]: Examples
+                - paragraph [ref=f1e102]: Testimonials
+              - generic [ref=f1e103]:
+                - paragraph [ref=f1e104]: "5"
+                - paragraph [ref=f1e105]: Demo Rating
+                - paragraph [ref=f1e106]: Sample
+        - generic [ref=f1e107]:
+          - generic [ref=f1e108]: Free Quote
+          - heading "Receive a Free Quote" [level=3] [ref=f1e109]
+          - paragraph [ref=f1e110]: "Simply complete our form below:"
+          - generic [ref=f1e111]:
+            - generic [ref=f1e112]:
+              - generic [ref=f1e113]: Full name
+              - textbox "Full name" [ref=f1e114]:
+                - /placeholder: Full Name...
+            - generic [ref=f1e115]:
+              - generic [ref=f1e116]: Phone number
+              - textbox "Phone number" [ref=f1e117]:
+                - /placeholder: Phone Number...
+            - generic [ref=f1e118]:
+              - generic [ref=f1e119]: Email address
+              - textbox "Email address" [ref=f1e120]:
+                - /placeholder: Email Address...
+            - generic [ref=f1e121]:
+              - generic [ref=f1e122]: How can we help?
+              - textbox "How can we help?" [ref=f1e123]:
+                - /placeholder: Tell us what we can help you with...
+          - button "Submit Now" [ref=f1e124] [cursor=pointer]:
+            - text: Submit Now
+            - generic [aria-hidden] [ref=f1e125]: "--->"
+    - region [ref=f1e126]:
+      - generic [ref=f1e127]:
+        - generic [ref=f1e128]:
+          - paragraph [ref=f1e129]: Industry-Leading Plumbing Solutions
+          - heading "Plumbing Help for Your Property" [level=2] [ref=f1e130]
+          - paragraph [ref=f1e131]: From a dripping tap to a blocked drain, CedarFlow Plumbing offers practical support for homes, rental properties, and workplaces throughout the Mapleford district.
+        - generic "Plumbing services; swipe for more on mobile" [ref=f1e132]:
+          - group [ref=f1e133]:
+            - generic "View Plumbing service details" [ref=f1e134] [cursor=pointer]:
+              - img "Plumbing plumbing service" [ref=f1e135]
+              - generic [ref=f1e136]:
+                - generic [ref=f1e137]: Plumbing
+                - generic [aria-hidden] [ref=f1e138]: ›
+          - group [ref=f1e139]:
+            - generic "View Emergency service details" [ref=f1e140] [cursor=pointer]:
+              - img "Emergency plumbing service" [ref=f1e141]
+              - generic [ref=f1e142]:
+                - generic [ref=f1e143]: Emergency
+                - generic [aria-hidden] [ref=f1e144]: ›
+          - group [ref=f1e145]:
+            - generic "View Commercial service details" [ref=f1e146] [cursor=pointer]:
+              - img "Commercial plumbing service" [ref=f1e147]
+              - generic [ref=f1e148]:
+                - generic [ref=f1e149]: Commercial
+                - generic [aria-hidden] [ref=f1e150]: ›
+          - group [ref=f1e151]:
+            - generic "View Strata service details" [ref=f1e152] [cursor=pointer]:
+              - img "Strata plumbing service" [ref=f1e153]
+              - generic [ref=f1e154]:
+                - generic [ref=f1e155]: Strata
+                - generic [aria-hidden] [ref=f1e156]: ›
+          - group [ref=f1e157]:
+            - generic "View Industrial service details" [ref=f1e158] [cursor=pointer]:
+              - img "Industrial plumbing service" [ref=f1e159]
+              - generic [ref=f1e160]:
+                - generic [ref=f1e161]: Industrial
+                - generic [aria-hidden] [ref=f1e162]: ›
+          - group [ref=f1e163]:
+            - generic "View Real Estate service details" [ref=f1e164] [cursor=pointer]:
+              - img "Real Estate plumbing service" [ref=f1e165]
+              - generic [ref=f1e166]:
+                - generic [ref=f1e167]: Real Estate
+                - generic [aria-hidden] [ref=f1e168]: ›
+          - group [ref=f1e169]:
+            - generic "View Maintenance service details" [ref=f1e170] [cursor=pointer]:
+              - img "Maintenance plumbing service" [ref=f1e171]
+              - generic [ref=f1e172]:
+                - generic [ref=f1e173]: Maintenance
+                - generic [aria-hidden] [ref=f1e174]: ›
+          - group [ref=f1e175]:
+            - generic "View Drainage service details" [ref=f1e176] [cursor=pointer]:
+              - img "Drainage plumbing service" [ref=f1e177]
+              - generic [ref=f1e178]:
+                - generic [ref=f1e179]: Drainage
+                - generic [aria-hidden] [ref=f1e180]: ›
+          - group [ref=f1e181]:
+            - generic "View Hot Water service details" [ref=f1e182] [cursor=pointer]:
+              - img "Hot Water plumbing service" [ref=f1e183]
+              - generic [ref=f1e184]:
+                - generic [ref=f1e185]: Hot Water
+                - generic [aria-hidden] [ref=f1e186]: ›
+          - group [ref=f1e187]:
+            - generic "View Gas service details" [ref=f1e188] [cursor=pointer]:
+              - img "Gas plumbing service" [ref=f1e189]
+              - generic [ref=f1e190]:
+                - generic [ref=f1e191]: Gas
+                - generic [aria-hidden] [ref=f1e192]: ›
+          - group [ref=f1e193]:
+            - generic "View Roof & Gutters service details" [ref=f1e194] [cursor=pointer]:
+              - img "Roof & Gutters plumbing service" [ref=f1e195]
+              - generic [ref=f1e196]:
+                - generic [ref=f1e197]: Roof & Gutters
+                - generic [aria-hidden] [ref=f1e198]: ›
+          - group [ref=f1e199]:
+            - generic "View Leaks service details" [ref=f1e200] [cursor=pointer]:
+              - img "Leaks plumbing service" [ref=f1e201]
+              - generic [ref=f1e202]:
+                - generic [ref=f1e203]: Leaks
+                - generic [aria-hidden] [ref=f1e204]: ›
+        - link "View All Services" [ref=f1e206] [cursor=pointer]:
+          - /url: "#services"
+          - text: View All Services
+          - generic [aria-hidden] [ref=f1e207]: "--->"
+    - region [ref=f1e208]:
+      - generic [ref=f1e209]:
+        - generic [ref=f1e210]:
+          - paragraph [ref=f1e211]: Expect Nothing But The Best
+          - heading "Three Ways We Make Plumbing Easier" [level=2] [ref=f1e212]
+          - paragraph [ref=f1e213]: Good plumbing service starts with listening. We focus on practical recommendations, respect for your space, and clear updates from the first conversation.
+        - generic [ref=f1e214]:
+          - img "CedarFlow Plumbing team and service vehicle" [ref=f1e215]
+          - list [ref=f1e216]:
+            - listitem [ref=f1e217]:
+              - generic [ref=f1e218]: "1"
+              - heading "Practical advice for your property." [level=3] [ref=f1e220]
+              - paragraph [ref=f1e221]: We explain your options and help you understand the materials and work involved before you decide.
+            - listitem [ref=f1e222]:
+              - generic [ref=f1e223]: "2"
+              - heading "Care for your home and workspace." [level=3] [ref=f1e225]
+              - paragraph [ref=f1e226]: We plan the work carefully, protect the area around the repair, and tidy up when the job is finished.
+            - listitem [ref=f1e227]:
+              - generic [ref=f1e228]: "3"
+              - heading "Clear communication along the way." [level=3] [ref=f1e230]
+              - paragraph [ref=f1e231]: We discuss arrival times, keep you informed about changes, and explain what happens next.
+    - region [ref=f1e232]:
+      - generic [ref=f1e233]:
+        - generic [ref=f1e234]:
+          - paragraph [ref=f1e235]: Making Hard Times; Easy.
+          - heading "Let’s Talk About Payment Options" [level=2] [ref=f1e236]
+          - blockquote [ref=f1e237]: Before any work begins, ask us about the proposed cost and available ways to pay. Any payment arrangement depends on the work and agreed terms; this demo does not advertise a finance-provider partnership.
+          - paragraph [ref=f1e238]: We have all been there; unexpected costs like a replacement hot water system or a blocked drain that needs pipe relining can get expensive. Talk with our team about the quote and available payment arrangements before work begins.
+          - generic [ref=f1e239]:
+            - generic [ref=f1e240]:
+              - generic [aria-hidden] [ref=f1e241]: 
+              - generic [ref=f1e242]:
+                - heading "Understand the Cost" [level=3] [ref=f1e243]
+                - paragraph [ref=f1e244]: Talk through the quote and what is included.
+            - generic [ref=f1e245]:
+              - generic [aria-hidden] [ref=f1e246]: 
+              - generic [ref=f1e247]:
+                - heading "Ask Before You Book" [level=3] [ref=f1e248]
+                - paragraph [ref=f1e249]: Discuss payment arrangements with our team.
+        - img "Two overlapping CedarFlow payment concept cards" [ref=f1e250]
+    - region [ref=f1e251]:
+      - generic [ref=f1e252]:
+        - generic [ref=f1e253]:
+          - paragraph [ref=f1e254]: Connect With Us
+          - heading "Need a Hand With Your Plumbing?" [level=2] [ref=f1e255]
+        - generic:
+          - img "CedarFlow plumber ready to help"
+        - generic [ref=f1e256]:
+          - paragraph [ref=f1e257]: Have a question about a repair or a new project? Contact CedarFlow Plumbing to discuss your property and the help you need.
+          - link "Call Us Now (202) 555-0147" [ref=f1e258] [cursor=pointer]:
+            - /url: tel:+12025550147
+            - generic [aria-hidden] [ref=f1e260]: 
+            - generic [ref=f1e261]:
+              - generic [ref=f1e262]: Call Us Now
+              - text: (202) 555-0147
+    - region [ref=f1e263]:
+      - generic [ref=f1e265]:
+        - paragraph [ref=f1e266]: Who are we?
+        - heading "Meet CedarFlow Plumbing" [level=2] [ref=f1e267]
+        - paragraph [ref=f1e268]: CedarFlow Plumbing is a fictional local plumbing business created for this website preview. Our sample brand is built around approachable service, clear explanations, and thoughtful care for homes and workplaces.
+      - generic [ref=f1e269]:
+        - generic [ref=f1e270]:
+          - heading "Practical Plumbing With a Personal Touch" [level=3] [ref=f1e271]
+          - paragraph [ref=f1e272]: We believe a plumbing visit should be easy to understand. From discussing the problem to explaining the work, CedarFlow focuses on practical options, tidy repairs, and communication that helps you feel informed.
+        - img "Plumber working on a downpipe at a home" [ref=f1e273]
+    - region [ref=f1e274]:
+      - generic [ref=f1e275]:
+        - generic [ref=f1e276]:
+          - paragraph [ref=f1e277]: Why Choose CedarFlow Plumbing
+          - heading "What Matters to Our Team" [level=2] [ref=f1e278]
+          - paragraph [ref=f1e279]: "These are the service values behind the CedarFlow brand: listen carefully, explain the options, respect the property, and keep the customer informed."
+        - generic [ref=f1e280]:
+          - img "CedarFlow Plumbing team ready to help" [ref=f1e281]
+          - list [ref=f1e282]:
+            - listitem [ref=f1e283]:
+              - generic [aria-hidden] [ref=f1e284]: 
+              - heading "Clear Arrival Updates" [level=3] [ref=f1e285]
+            - listitem [ref=f1e286]:
+              - generic [aria-hidden] [ref=f1e287]: 
+              - heading "Upfront Quote Discussions" [level=3] [ref=f1e288]
+            - listitem [ref=f1e289]:
+              - generic [aria-hidden] [ref=f1e290]: 
+              - heading "Careful Workmanship" [level=3] [ref=f1e291]
+            - listitem [ref=f1e292]:
+              - generic [aria-hidden] [ref=f1e293]: 
+              - heading "Respect for Your Space" [level=3] [ref=f1e294]
+            - listitem [ref=f1e295]:
+              - generic [aria-hidden] [ref=f1e296]: 
+              - heading "Practical Plumbing Advice" [level=3] [ref=f1e297]
+            - listitem [ref=f1e298]:
+              - generic [aria-hidden] [ref=f1e299]: 
+              - heading "Customer-Focused Service" [level=3] [ref=f1e300]
+    - region [ref=f1e301]:
+      - generic [ref=f1e302]:
+        - generic [ref=f1e303]:
+          - paragraph [ref=f1e304]: The Plumber Mapleford Residents Love
+          - heading "Customer Stories — Demo Examples" [level=2] [ref=f1e305]
+          - paragraph [ref=f1e306]: These fictional customer stories show the kind of clear communication and careful service CedarFlow Plumbing aims to provide. Replace them with verified reviews before launch.
+        - generic [ref=f1e307]:
+          - article [ref=f1e308]:
+            - blockquote [ref=f1e309]: CedarFlow Plumbing made a stressful kitchen leak easy to deal with. The plumber explained the options, kept the work area tidy, and walked us through the repair before leaving.
+            - generic [ref=f1e311]:
+              - generic "5 out of 5 stars" [ref=f1e312]:
+                - generic [aria-hidden] [ref=f1e313]: ★
+                - generic [aria-hidden] [ref=f1e314]: ★
+                - generic [aria-hidden] [ref=f1e315]: ★
+                - generic [aria-hidden] [ref=f1e316]: ★
+                - generic [aria-hidden] [ref=f1e317]: ★
+              - heading "Jamie Parker · Sample review" [level=3] [ref=f1e318]
+          - article [ref=f1e319]:
+            - blockquote [ref=f1e320]: We contacted CedarFlow Plumbing about an unreliable hot water system. The advice was clear, the visit was easy to arrange, and we knew what to expect at every stage.
+            - generic [ref=f1e322]:
+              - generic "5 out of 5 stars" [ref=f1e323]:
+                - generic [aria-hidden] [ref=f1e324]: ★
+                - generic [aria-hidden] [ref=f1e325]: ★
+                - generic [aria-hidden] [ref=f1e326]: ★
+                - generic [aria-hidden] [ref=f1e327]: ★
+                - generic [aria-hidden] [ref=f1e328]: ★
+              - heading "Morgan Ellis · Sample review" [level=3] [ref=f1e329]
+          - article [ref=f1e330]:
+            - blockquote [ref=f1e331]: Our slow bathroom drain needed attention. CedarFlow Plumbing checked the cause, explained the next steps, and shared useful tips for keeping the pipes clear.
+            - generic [ref=f1e333]:
+              - generic "5 out of 5 stars" [ref=f1e334]:
+                - generic [aria-hidden] [ref=f1e335]: ★
+                - generic [aria-hidden] [ref=f1e336]: ★
+                - generic [aria-hidden] [ref=f1e337]: ★
+                - generic [aria-hidden] [ref=f1e338]: ★
+                - generic [aria-hidden] [ref=f1e339]: ★
+              - heading "Taylor Reed · Sample review" [level=3] [ref=f1e340]
+    - region [ref=f1e341]:
+      - generic [ref=f1e342]:
+        - generic [ref=f1e343]:
+          - heading "Every Property Has a Different Story" [level=2] [ref=f1e344]
+          - paragraph [ref=f1e345]: Homes, workplaces, and rental properties all have different needs. Talk to CedarFlow about a suitable plan for yours. Images below are AI-generated project concepts.
+          - generic [ref=f1e346]:
+            - generic [aria-hidden] [ref=f1e347]: ✓
+            - heading "Domestic, Commercial or Industrial" [level=3] [ref=f1e348]
+            - paragraph [ref=f1e349]: Discuss repairs and maintenance for your home, business, or managed property.
+          - generic [ref=f1e350]:
+            - generic [aria-hidden] [ref=f1e351]: ✓
+            - heading "From Northbank to Willowbrook to Cedar Grove" [level=3] [ref=f1e352]
+            - paragraph [ref=f1e353]: Our fictional service area includes Mapleford, Willow Coast, Northbank, and Cedar Valley.
+          - generic [ref=f1e354]:
+            - generic [aria-hidden] [ref=f1e355]: ✓
+            - heading "Plumbing Emergency? or Scheduled Renovations" [level=3] [ref=f1e356]
+            - paragraph [ref=f1e357]: From an unexpected leak to a planned upgrade, we help you understand your options.
+        - generic "Plumbing project gallery" [ref=f1e358]:
+          - generic [ref=f1e360]:
+            - generic [ref=f1e361]:
+              - figure [ref=f1e362]:
+                - img "Blocked Drains in Elm Hollow" [ref=f1e363]
+                - generic [ref=f1e364]: Blocked DrainsElm Hollow
+              - figure [ref=f1e365]:
+                - img "Hot Water System in Willow Quay" [ref=f1e366]
+                - generic [ref=f1e367]: Hot Water SystemWillow Quay
+              - figure [ref=f1e368]:
+                - img "Gas Fitting in Maple Gardens" [ref=f1e369]
+                - generic [ref=f1e370]: Gas FittingMaple Gardens
+              - figure [ref=f1e371]:
+                - img "Gas Fitting in Maple Gardens" [ref=f1e372]
+                - generic [ref=f1e373]: Gas FittingMaple Gardens
+            - generic [aria-hidden] [ref=f1e374]:
+              - figure [ref=f1e375]:
+                - generic [ref=f1e377]: Blocked Drains Elm Hollow
+              - figure [ref=f1e378]:
+                - generic [ref=f1e380]: Hot Water System Willow Quay
+              - figure [ref=f1e381]:
+                - generic [ref=f1e383]: Gas Fitting Maple Gardens
+              - figure [ref=f1e384]:
+                - generic [ref=f1e386]: Gas Fitting Maple Gardens
+          - generic [ref=f1e388]:
+            - generic [ref=f1e389]:
+              - figure [ref=f1e390]:
+                - img "Hot Water System in Willow Quay" [ref=f1e391]
+                - generic [ref=f1e392]: Hot Water SystemWillow Quay
+              - figure [ref=f1e393]:
+                - img "Gas Fitting in Maple Gardens" [ref=f1e394]
+                - generic [ref=f1e395]: Gas FittingMaple Gardens
+              - figure [ref=f1e396]:
+                - img "Gas Fitting in Maple Gardens" [ref=f1e397]
+                - generic [ref=f1e398]: Gas FittingMaple Gardens
+              - figure [ref=f1e399]:
+                - img "Blocked Drains in Elm Hollow" [ref=f1e400]
+                - generic [ref=f1e401]: Blocked DrainsElm Hollow
+            - generic [aria-hidden] [ref=f1e402]:
+              - figure [ref=f1e403]:
+                - generic [ref=f1e405]: Hot Water System Willow Quay
+              - figure [ref=f1e406]:
+                - generic [ref=f1e408]: Gas Fitting Maple Gardens
+              - figure [ref=f1e409]:
+                - generic [ref=f1e411]: Gas Fitting Maple Gardens
+              - figure [ref=f1e412]:
+                - generic [ref=f1e414]: Blocked Drains Elm Hollow
+          - generic [ref=f1e416]:
+            - generic [ref=f1e417]:
+              - figure [ref=f1e418]:
+                - img "Gas Fitting in Maple Gardens" [ref=f1e419]
+                - generic [ref=f1e420]: Gas FittingMaple Gardens
+              - figure [ref=f1e421]:
+                - img "Gas Fitting in Maple Gardens" [ref=f1e422]
+                - generic [ref=f1e423]: Gas FittingMaple Gardens
+              - figure [ref=f1e424]:
+                - img "Blocked Drains in Elm Hollow" [ref=f1e425]
+                - generic [ref=f1e426]: Blocked DrainsElm Hollow
+              - figure [ref=f1e427]:
+                - img "Hot Water System in Willow Quay" [ref=f1e428]
+                - generic [ref=f1e429]: Hot Water SystemWillow Quay
+            - generic [aria-hidden] [ref=f1e430]:
+              - figure [ref=f1e431]:
+                - generic [ref=f1e433]: Gas Fitting Maple Gardens
+              - figure [ref=f1e434]:
+                - generic [ref=f1e436]: Gas Fitting Maple Gardens
+              - figure [ref=f1e437]:
+                - generic [ref=f1e439]: Blocked Drains Elm Hollow
+              - figure [ref=f1e440]:
+                - generic [ref=f1e442]: Hot Water System Willow Quay
+          - button "Pause gallery" [ref=f1e443] [cursor=pointer]
+    - region [ref=f1e444]:
+      - generic [ref=f1e445]:
+        - generic [ref=f1e446]:
+          - paragraph [ref=f1e447]: Plumbing in 4 Easy Steps
+          - heading "We Made Plumbing Easy" [level=2] [ref=f1e448]
+          - paragraph [ref=f1e449]: A clear process makes repairs easier to arrange. Here is how a typical CedarFlow enquiry moves from the first conversation to the final handover.
+        - list [ref=f1e450]:
+          - listitem [aria-hidden]
+          - listitem [ref=f1e451]:
+            - generic [aria-hidden] [ref=f1e453]: 
+            - heading "Book your service" [level=3] [ref=f1e454]
+            - paragraph [ref=f1e455]: Tell us about your issue using the enquiry form or by phone.
+          - listitem [ref=f1e456]:
+            - generic [aria-hidden] [ref=f1e458]: 
+            - heading "Pick a time" [level=3] [ref=f1e459]
+            - paragraph [ref=f1e460]: Agree on an available appointment that fits your day.
+          - listitem [ref=f1e461]:
+            - generic [aria-hidden] [ref=f1e463]: 
+            - heading "We come to you" [level=3] [ref=f1e464]
+            - paragraph [ref=f1e465]: We assess the issue and discuss the proposed work.
+          - listitem [ref=f1e466]:
+            - generic [aria-hidden] [ref=f1e468]: 
+            - heading "Pay for our service" [level=3] [ref=f1e469]
+            - paragraph [ref=f1e470]: Review the completed work and agreed payment details.
+    - region [ref=f1e471]:
+      - generic [ref=f1e472]:
+        - generic [ref=f1e473]:
+          - paragraph [ref=f1e474]: Quality Service & Local Knowledge
+          - heading "Service Areas" [level=2] [ref=f1e475]
+          - paragraph [ref=f1e476]: Explore the fictional neighbourhoods in this demo service area. Contact CedarFlow to discuss availability once the real business locations are confirmed.
+        - generic [ref=f1e477]:
+          - generic [ref=f1e478]:
+            - heading "Top Suburbs" [level=3] [ref=f1e479]
+            - tablist "Service regions" [ref=f1e480]:
+              - tab "Willow Coast" [selected] [ref=f1e481] [cursor=pointer]:
+                - text: Willow Coast
+                - generic [aria-hidden] [ref=f1e482]: ›
+              - tab "Northbank District" [ref=f1e483] [cursor=pointer]:
+                - text: Northbank District
+                - generic [aria-hidden] [ref=f1e484]: ›
+              - tab "Cedar Valley" [ref=f1e485] [cursor=pointer]:
+                - text: Cedar Valley
+                - generic [aria-hidden] [ref=f1e486]: ›
+          - generic [ref=f1e487]:
+            - tabpanel "Willow Coast" [ref=f1e488]:
+              - list [ref=f1e489]:
+                - listitem [ref=f1e490]:
+                  - text: 
+                  - link "Alder Hollow" [ref=f1e491] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e492]:
+                  - text: 
+                  - link "Alder Grove" [ref=f1e493] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e494]:
+                  - text: 
+                  - link "Alder Meadow" [ref=f1e495] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e496]:
+                  - text: 
+                  - link "Alder Heights" [ref=f1e497] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e498]:
+                  - text: 
+                  - link "Alder Quay" [ref=f1e499] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e500]:
+                  - text: 
+                  - link "Alder Gardens" [ref=f1e501] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e502]:
+                  - text: 
+                  - link "Alder Crossing" [ref=f1e503] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e504]:
+                  - text: 
+                  - link "Alder Park" [ref=f1e505] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e506]:
+                  - text: 
+                  - link "Alder Ridge" [ref=f1e507] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e508]:
+                  - text: 
+                  - link "Alder Vale" [ref=f1e509] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e510]:
+                  - text: 
+                  - link "Alder Brook" [ref=f1e511] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e512]:
+                  - text: 
+                  - link "Alder Fields" [ref=f1e513] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e514]:
+                  - text: 
+                  - link "Birch Hollow" [ref=f1e515] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e516]:
+                  - text: 
+                  - link "Birch Grove" [ref=f1e517] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e518]:
+                  - text: 
+                  - link "Birch Meadow" [ref=f1e519] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e520]:
+                  - text: 
+                  - link "Birch Heights" [ref=f1e521] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e522]:
+                  - text: 
+                  - link "Birch Quay" [ref=f1e523] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e524]:
+                  - text: 
+                  - link "Birch Gardens" [ref=f1e525] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e526]:
+                  - text: 
+                  - link "Birch Crossing" [ref=f1e527] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e528]:
+                  - text: 
+                  - link "Birch Park" [ref=f1e529] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e530]:
+                  - text: 
+                  - link "Birch Ridge" [ref=f1e531] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e532]:
+                  - text: 
+                  - link "Birch Vale" [ref=f1e533] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e534]:
+                  - text: 
+                  - link "Birch Brook" [ref=f1e535] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e536]:
+                  - text: 
+                  - link "Birch Fields" [ref=f1e537] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e538]:
+                  - text: 
+                  - link "Cedar Hollow" [ref=f1e539] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e540]:
+                  - text: 
+                  - link "Cedar Grove" [ref=f1e541] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e542]:
+                  - text: 
+                  - link "Cedar Meadow" [ref=f1e543] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e544]:
+                  - text: 
+                  - link "Cedar Heights" [ref=f1e545] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e546]:
+                  - text: 
+                  - link "Cedar Quay" [ref=f1e547] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e548]:
+                  - text: 
+                  - link "Cedar Gardens" [ref=f1e549] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e550]:
+                  - text: 
+                  - link "Cedar Crossing" [ref=f1e551] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e552]:
+                  - text: 
+                  - link "Cedar Park" [ref=f1e553] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e554]:
+                  - text: 
+                  - link "Cedar Ridge" [ref=f1e555] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e556]:
+                  - text: 
+                  - link "Cedar Vale" [ref=f1e557] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e558]:
+                  - text: 
+                  - link "Cedar Brook" [ref=f1e559] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e560]:
+                  - text: 
+                  - link "Cedar Fields" [ref=f1e561] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e562]:
+                  - text: 
+                  - link "Elm Hollow" [ref=f1e563] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e564]:
+                  - text: 
+                  - link "Elm Grove" [ref=f1e565] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e566]:
+                  - text: 
+                  - link "Elm Meadow" [ref=f1e567] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e568]:
+                  - text: 
+                  - link "Elm Heights" [ref=f1e569] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e570]:
+                  - text: 
+                  - link "Elm Quay" [ref=f1e571] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e572]:
+                  - text: 
+                  - link "Elm Gardens" [ref=f1e573] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e574]:
+                  - text: 
+                  - link "Elm Crossing" [ref=f1e575] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e576]:
+                  - text: 
+                  - link "Elm Park" [ref=f1e577] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e578]:
+                  - text: 
+                  - link "Elm Ridge" [ref=f1e579] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e580]:
+                  - text: 
+                  - link "Elm Vale" [ref=f1e581] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e582]:
+                  - text: 
+                  - link "Elm Brook" [ref=f1e583] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e584]:
+                  - text: 
+                  - link "Elm Fields" [ref=f1e585] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e586]:
+                  - text: 
+                  - link "Fern Hollow" [ref=f1e587] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e588]:
+                  - text: 
+                  - link "Fern Grove" [ref=f1e589] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e590]:
+                  - text: 
+                  - link "Fern Meadow" [ref=f1e591] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e592]:
+                  - text: 
+                  - link "Fern Heights" [ref=f1e593] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e594]:
+                  - text: 
+                  - link "Fern Quay" [ref=f1e595] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e596]:
+                  - text: 
+                  - link "Fern Gardens" [ref=f1e597] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e598]:
+                  - text: 
+                  - link "Fern Crossing" [ref=f1e599] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e600]:
+                  - text: 
+                  - link "Fern Park" [ref=f1e601] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e602]:
+                  - text: 
+                  - link "Fern Ridge" [ref=f1e603] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e604]:
+                  - text: 
+                  - link "Fern Vale" [ref=f1e605] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e606]:
+                  - text: 
+                  - link "Fern Brook" [ref=f1e607] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e608]:
+                  - text: 
+                  - link "Fern Fields" [ref=f1e609] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e610]:
+                  - text: 
+                  - link "Hazel Hollow" [ref=f1e611] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e612]:
+                  - text: 
+                  - link "Hazel Grove" [ref=f1e613] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e614]:
+                  - text: 
+                  - link "Hazel Meadow" [ref=f1e615] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e616]:
+                  - text: 
+                  - link "Hazel Heights" [ref=f1e617] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e618]:
+                  - text: 
+                  - link "Hazel Quay" [ref=f1e619] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e620]:
+                  - text: 
+                  - link "Hazel Gardens" [ref=f1e621] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e622]:
+                  - text: 
+                  - link "Hazel Crossing" [ref=f1e623] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e624]:
+                  - text: 
+                  - link "Hazel Park" [ref=f1e625] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e626]:
+                  - text: 
+                  - link "Hazel Ridge" [ref=f1e627] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e628]:
+                  - text: 
+                  - link "Hazel Vale" [ref=f1e629] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e630]:
+                  - text: 
+                  - link "Hazel Brook" [ref=f1e631] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e632]:
+                  - text: 
+                  - link "Hazel Fields" [ref=f1e633] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e634]:
+                  - text: 
+                  - link "Ivy Hollow" [ref=f1e635] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e636]:
+                  - text: 
+                  - link "Ivy Grove" [ref=f1e637] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e638]:
+                  - text: 
+                  - link "Ivy Meadow" [ref=f1e639] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e640]:
+                  - text: 
+                  - link "Ivy Heights" [ref=f1e641] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e642]:
+                  - text: 
+                  - link "Ivy Quay" [ref=f1e643] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e644]:
+                  - text: 
+                  - link "Ivy Gardens" [ref=f1e645] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e646]:
+                  - text: 
+                  - link "Ivy Crossing" [ref=f1e647] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e648]:
+                  - text: 
+                  - link "Ivy Park" [ref=f1e649] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e650]:
+                  - text: 
+                  - link "Ivy Ridge" [ref=f1e651] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e652]:
+                  - text: 
+                  - link "Ivy Vale" [ref=f1e653] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e654]:
+                  - text: 
+                  - link "Ivy Brook" [ref=f1e655] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e656]:
+                  - text: 
+                  - link "Ivy Fields" [ref=f1e657] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e658]:
+                  - text: 
+                  - link "Juniper Hollow" [ref=f1e659] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e660]:
+                  - text: 
+                  - link "Juniper Grove" [ref=f1e661] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e662]:
+                  - text: 
+                  - link "Juniper Meadow" [ref=f1e663] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e664]:
+                  - text: 
+                  - link "Juniper Heights" [ref=f1e665] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e666]:
+                  - text: 
+                  - link "Juniper Quay" [ref=f1e667] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e668]:
+                  - text: 
+                  - link "Juniper Gardens" [ref=f1e669] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e670]:
+                  - text: 
+                  - link "Juniper Crossing" [ref=f1e671] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e672]:
+                  - text: 
+                  - link "Juniper Park" [ref=f1e673] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e674]:
+                  - text: 
+                  - link "Juniper Ridge" [ref=f1e675] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e676]:
+                  - text: 
+                  - link "Juniper Vale" [ref=f1e677] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e678]:
+                  - text: 
+                  - link "Juniper Brook" [ref=f1e679] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e680]:
+                  - text: 
+                  - link "Juniper Fields" [ref=f1e681] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e682]:
+                  - text: 
+                  - link "Laurel Hollow" [ref=f1e683] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e684]:
+                  - text: 
+                  - link "Laurel Grove" [ref=f1e685] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e686]:
+                  - text: 
+                  - link "Laurel Meadow" [ref=f1e687] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e688]:
+                  - text: 
+                  - link "Laurel Heights" [ref=f1e689] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e690]:
+                  - text: 
+                  - link "Laurel Quay" [ref=f1e691] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e692]:
+                  - text: 
+                  - link "Laurel Gardens" [ref=f1e693] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e694]:
+                  - text: 
+                  - link "Laurel Crossing" [ref=f1e695] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e696]:
+                  - text: 
+                  - link "Laurel Park" [ref=f1e697] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e698]:
+                  - text: 
+                  - link "Laurel Ridge" [ref=f1e699] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e700]:
+                  - text: 
+                  - link "Laurel Vale" [ref=f1e701] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e702]:
+                  - text: 
+                  - link "Laurel Brook" [ref=f1e703] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e704]:
+                  - text: 
+                  - link "Laurel Fields" [ref=f1e705] [cursor=pointer]:
+                    - /url: "#contact"
+                - listitem [ref=f1e706]:
+                  - text: 
+                  - link "Maple Hollow" [ref=f1e707] [cursor=pointer]:
+                    - /url: "#contact"
+            - text:                                                                                                           
+    - region [ref=f1e708]:
+      - generic [ref=f1e709]:
+        - generic [ref=f1e710]:
+          - paragraph [ref=f1e711]: Everything Plumbing & More
+          - heading "Helpful Plumbing Notes" [level=2] [ref=f1e712]
+          - paragraph [ref=f1e713]: A few practical topics to discuss with your plumber, from noticing early warning signs to planning routine maintenance. These are sample article previews for the new brand.
+        - generic [ref=f1e714]:
+          - article [ref=f1e715]:
+            - img "Leak repair illustration" [ref=f1e716]
+            - heading "What to Tell Your Plumber About a Leak" [level=3] [ref=f1e717]
+            - paragraph [ref=f1e718]: Make a note of where you noticed the water, when the problem started, and whether it changes when a fixture is used. These details can help your plumber prepare for the visit.
+            - link "Ask Our Team →" [ref=f1e719] [cursor=pointer]:
+              - /url: "#contact"
+          - article [ref=f1e720]:
+            - img "Gutter maintenance illustration" [ref=f1e721]
+            - heading "Simple Signs Your Gutters Need Attention" [level=3] [ref=f1e722]
+            - paragraph [ref=f1e723]: Overflowing water, loose fittings, and damp patches can be useful signs to mention when arranging an inspection. Ask about suitable maintenance for your property.
+            - link "Ask Our Team →" [ref=f1e724] [cursor=pointer]:
+              - /url: "#contact"
+          - article [ref=f1e725]:
+            - img "Workplace plumbing illustration" [ref=f1e726]
+            - heading "Planning Plumbing Maintenance at Work" [level=3] [ref=f1e727]
+            - paragraph [ref=f1e728]: Keep a record of recurring issues and choose a convenient time to discuss maintenance. A clear plan can help your team prepare for repair work.
+            - link "Ask Our Team →" [ref=f1e729] [cursor=pointer]:
+              - /url: "#contact"
+    - region [ref=f1e730]:
+      - generic [ref=f1e731]:
+        - generic [ref=f1e732]:
+          - generic [aria-hidden] [ref=f1e733]: 
+          - generic [ref=f1e734]:
+            - paragraph [ref=f1e735]: Contact the CedarFlow team
+            - heading "Questions About a Plumbing Problem?" [level=2] [ref=f1e736]
+            - link "(202) 555-0147" [ref=f1e737] [cursor=pointer]:
+              - /url: tel:+12025550147
+        - img "Plumber on the phone" [ref=f1e738]
+    - region [ref=f1e739]:
+      - generic [ref=f1e740]:
+        - generic [ref=f1e741]:
+          - generic [ref=f1e742]:
+            - heading "Let’s Plan Your Next Step" [level=2] [ref=f1e743]
+            - paragraph [ref=f1e744]: Share your contact details and a short description of the work. This preview form demonstrates the enquiry process without sending a message.
+          - generic [ref=f1e745]:
+            - generic [ref=f1e746]:
+              - generic [ref=f1e747]: Full name
+              - textbox "Full name" [ref=f1e748]:
+                - /placeholder: Full Name...
+            - generic [ref=f1e749]:
+              - generic [ref=f1e750]: Phone number
+              - textbox "Phone number" [ref=f1e751]:
+                - /placeholder: Phone Number...
+            - generic [ref=f1e752]:
+              - generic [ref=f1e753]: Email address
+              - textbox "Email address" [ref=f1e754]:
+                - /placeholder: Email...
+            - generic [ref=f1e755]:
+              - generic [ref=f1e756]: Message
+              - textbox "Message" [ref=f1e757]:
+                - /placeholder: Enter Message...
+            - button "Submit Now" [ref=f1e759] [cursor=pointer]:
+              - text: Submit Now
+              - generic [aria-hidden] [ref=f1e760]: "--->"
+        - generic [ref=f1e761]:
+          - heading "A Preview of Your Future Reviews" [level=2] [ref=f1e762]
+          - paragraph [ref=f1e763]: These sample reviews illustrate the experience CedarFlow aims to provide.
+        - generic [ref=f1e764]:
+          - paragraph [ref=f1e766]: Clear communication
+          - paragraph [ref=f1e768]: Thoughtful service
+          - paragraph [ref=f1e770]: Practical advice
+  - contentinfo [ref=f1e771]:
+    - generic [ref=f1e772]:
+      - generic [ref=f1e773]:
+        - heading "Get the latest offers & updates" [level=2] [ref=f1e774]: Get the latestoffers & updates
+        - generic [ref=f1e775]:
+          - generic [ref=f1e776]: Email address for offers and updates
+          - generic [ref=f1e777]:
+            - textbox "Email address for offers and updates" [ref=f1e778]:
+              - /placeholder: Enter Your Address
+            - button "View More" [ref=f1e779] [cursor=pointer]:
+              - text: View More
+              - generic [aria-hidden] [ref=f1e780]: "--->"
+        - img "Plumber giving a thumbs up" [ref=f1e782]
+      - generic [ref=f1e783]:
+        - generic [ref=f1e784]:
+          - heading "Our Services" [level=2] [ref=f1e785]
+          - list [ref=f1e786]:
+            - listitem [ref=f1e787]:
+              - link "Plumbing" [ref=f1e788] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f1e789]:
+              - link "Commercial" [ref=f1e790] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f1e791]:
+              - link "Strata" [ref=f1e792] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f1e793]:
+              - link "Real Estate" [ref=f1e794] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f1e795]:
+              - link "Drainage" [ref=f1e796] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f1e797]:
+              - link "Hot Water" [ref=f1e798] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f1e799]:
+              - link "Gasfitting" [ref=f1e800] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f1e801]:
+              - link "View More" [ref=f1e802] [cursor=pointer]:
+                - /url: "#services"
+        - generic [ref=f1e803]:
+          - heading "Quick Links" [level=2] [ref=f1e804]
+          - list [ref=f1e805]:
+            - listitem [ref=f1e806]:
+              - link "Help Centre" [ref=f1e807] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f1e808]:
+              - link "Testimonials" [ref=f1e809] [cursor=pointer]:
+                - /url: "#testimonials"
+            - listitem [ref=f1e810]:
+              - link "Careers" [ref=f1e811] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f1e812]:
+              - link "Business Values" [ref=f1e813] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f1e814]:
+              - link "Our Blog" [ref=f1e815] [cursor=pointer]:
+                - /url: "#blog"
+            - listitem [ref=f1e816]:
+              - link "HTML Sitemap" [ref=f1e817] [cursor=pointer]:
+                - /url: "#contact"
+            - listitem [ref=f1e818]:
+              - link "Contact Us" [ref=f1e819] [cursor=pointer]:
+                - /url: "#contact"
+        - list [ref=f1e821]:
+          - listitem [ref=f1e822]:
+            - link "Willow Coast" [ref=f1e823] [cursor=pointer]:
+              - /url: "#contact"
+          - listitem [ref=f1e824]:
+            - link "Northbank" [ref=f1e825] [cursor=pointer]:
+              - /url: "#contact"
+          - listitem [ref=f1e826]:
+            - link "Cedar Valley" [ref=f1e827] [cursor=pointer]:
+              - /url: "#contact"
+        - generic [ref=f1e828]:
+          - heading "It’s plumbing, but we do it better; because we know what you want." [level=2] [ref=f1e829]
+          - generic [ref=f1e830]:
+            - link "Book Online or Call" [ref=f1e831] [cursor=pointer]:
+              - /url: "#contact"
+            - link "(202) 555-0147" [ref=f1e832] [cursor=pointer]:
+              - /url: tel:+12025550147
+      - generic [ref=f1e833]:
+        - generic [ref=f1e834]:
+          - generic [aria-hidden] [ref=f1e835]: 
+          - generic [ref=f1e836]: 24 Willow Lane, Mapleford, EX 00000
+        - generic [ref=f1e837]:
+          - generic [aria-hidden] [ref=f1e838]: 
+          - generic [ref=f1e839]: Every day, 24 hours
+        - generic [ref=f1e840]:
+          - generic [aria-hidden] [ref=f1e841]: 
+          - link "hello@cedarflow.example" [ref=f1e842] [cursor=pointer]:
+            - /url: mailto:hello@cedarflow.example
+        - generic [ref=f1e843]:
+          - link "Ask about our social profiles" [ref=f1e844] [cursor=pointer]:
+            - /url: "#contact"
+            - generic [aria-hidden] [ref=f1e845]: 
+          - link "Ask about our social profiles" [ref=f1e846] [cursor=pointer]:
+            - /url: "#contact"
+            - generic [aria-hidden] [ref=f1e847]: 
+          - link "Ask about our social profiles" [ref=f1e848] [cursor=pointer]:
+            - /url: "#contact"
+            - generic [aria-hidden] [ref=f1e849]: 
+          - link "Ask about our social profiles" [ref=f1e850] [cursor=pointer]:
+            - /url: "#contact"
+            - generic [aria-hidden] [ref=f1e851]: 
+      - generic [ref=f1e852]:
+        - paragraph [ref=f1e853]: © 2026 CedarFlow Plumbing. All rights reserved.
+        - paragraph [ref=f1e854]:
+          - link "Request Service Terms" [ref=f1e855] [cursor=pointer]:
+            - /url: "#contact"
+          - text: —
+          - link "Ask About Privacy" [ref=f1e856] [cursor=pointer]:
+            - /url: "#contact"
+      - paragraph [ref=f1e857]: Fictional demo business. Contact details, locations, and customer stories are placeholders.

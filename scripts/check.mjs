@@ -55,7 +55,7 @@ assert.match($('h1').textContent, /Example Plumbing/);
 assert.equal($('a[href^="tel:"]').getAttribute('href'), 'tel:0711112222');
 assert.match(
   document.documentElement.style.getPropertyValue('--image-hero'),
-  /http:\/\/localhost:3001\/assets\/images\/home-banner.jpg/,
+  /http:\/\/localhost:3001\/assets\/images\/cedarflow-home-exterior-v1.png/,
 );
 click($('#menu-toggle'));
 assert.equal($('#menu-toggle').getAttribute('aria-expanded'), 'true');
@@ -116,7 +116,8 @@ for (const element of document.querySelectorAll('[aria-controls], [aria-labelled
 }
 const refs = [...html.matchAll(/(?:src|href)="\.\/([^"]+)"/g)].map((match) => match[1]);
 for (const file of refs) await access(file);
-for (const name of ['our-process-bg.jpg', 'home-banner.jpg']) await access(`assets/images/${name}`);
+for (const name of ['cedarflow-tools-background-v1.png', 'cedarflow-home-exterior-v1.png'])
+  await access(`assets/images/${name}`);
 assert.equal([...html.matchAll(/<main\b/g)].length, 1);
 assert.equal([...html.matchAll(/<\/main>/g)].length, 1);
 assert.equal(document.querySelectorAll('script[src^="http"]').length, 0);

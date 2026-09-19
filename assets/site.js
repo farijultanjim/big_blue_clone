@@ -44,8 +44,8 @@ document.querySelectorAll('img').forEach((img) => {
   if (config.images?.[filename]) img.src = config.images[filename];
 });
 for (const [variable, filename] of [
-  ['--image-hero', 'home-banner.jpg'],
-  ['--image-process', 'our-process-bg.jpg'],
+  ['--image-hero', 'cedarflow-home-exterior-v1.png'],
+  ['--image-process', 'cedarflow-tools-background-v1.png'],
 ]) {
   const url = new URL(imagePath(filename), document.baseURI).href;
   document.documentElement.style.setProperty(variable, `url("${url.replaceAll('"', '%22')}")`);
