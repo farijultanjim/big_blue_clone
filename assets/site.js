@@ -1,35 +1,59 @@
+// Page interactions. Business content belongs in site-config.js; styles in theme.css.
+// Sections run in order because later features share configuration and motion state.
+
+// ============================================================================
+// 01. BUSINESS SETTINGS AND IMAGE OVERRIDES
+// ============================================================================
+
 const config = window.SITE_CONFIG || {};
 const replacements = [
-  ['Big Blue Plumbing', config.name], ['(07) 5404 9354', config.phone],
-  ['jobs@bigblueplumbing.au', config.email], ['83 Kalana Rd, 4551 QLD Australia', config.address],
-  ['Mon – Sun 24/7', config.hours]
+  ['CedarFlow Plumbing', config.name],
+  ['(202) 555-0147', config.phone],
+  ['hello@cedarflow.example', config.email],
+  ['24 Willow Lane, Mapleford, EX 00000', config.address],
+  ['Every day, 24 hours', config.hours],
 ].filter(([, value]) => value);
 function brandText(text) {
   for (const [original, replacement] of replacements) text = text.replaceAll(original, replacement);
   return text;
 }
-function imagePath(filename) { return config.images?.[filename] || `./assets/images/${filename}`; }
+function imagePath(filename) {
+  return config.images?.[filename] || `./assets/images/${filename}`;
+}
 const textWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
 while (textWalker.nextNode()) {
   const node = textWalker.currentNode;
-  if (!['SCRIPT', 'STYLE'].includes(node.parentElement?.tagName)) node.textContent = brandText(node.textContent);
+  if (!['SCRIPT', 'STYLE'].includes(node.parentElement?.tagName))
+    node.textContent = brandText(node.textContent);
 }
 document.title = brandText(document.title);
-document.querySelectorAll('[alt], [aria-label]').forEach(element => {
+document.querySelectorAll('[alt], [aria-label]').forEach((element) => {
   for (const attribute of ['alt', 'aria-label']) {
-    if (element.hasAttribute(attribute)) element.setAttribute(attribute, brandText(element.getAttribute(attribute)));
+    if (element.hasAttribute(attribute))
+      element.setAttribute(attribute, brandText(element.getAttribute(attribute)));
   }
 });
-document.querySelectorAll('a[href^="tel:"]').forEach(link => { if (config.phoneLink) link.href = `tel:${config.phoneLink}`; });
-document.querySelectorAll('a[href^="mailto:"]').forEach(link => { if (config.email) link.href = `mailto:${config.email}`; });
-document.querySelectorAll('img').forEach(img => {
+document.querySelectorAll('a[href^="tel:"]').forEach((link) => {
+  if (config.phoneLink) link.href = `tel:${config.phoneLink}`;
+});
+document.querySelectorAll('a[href^="mailto:"]').forEach((link) => {
+  if (config.email) link.href = `mailto:${config.email}`;
+});
+document.querySelectorAll('img').forEach((img) => {
   const filename = img.getAttribute('src').split('/').pop();
   if (config.images?.[filename]) img.src = config.images[filename];
 });
-for (const [variable, filename] of [['--image-hero','home-banner.jpg'], ['--image-process','our-process-bg.jpg']]) {
+for (const [variable, filename] of [
+  ['--image-hero', 'home-banner.jpg'],
+  ['--image-process', 'our-process-bg.jpg'],
+]) {
   const url = new URL(imagePath(filename), document.baseURI).href;
   document.documentElement.style.setProperty(variable, `url("${url.replaceAll('"', '%22')}")`);
 }
+
+// ============================================================================
+// 02. MOBILE NAVIGATION AND DISCLOSURES
+// ============================================================================
 
 const toggle = document.querySelector('#menu-toggle');
 const menu = document.querySelector('#main-menu');
@@ -44,37 +68,59 @@ toggle.addEventListener('click', () => {
   toggle.setAttribute('aria-expanded', String(open));
   toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
 });
-menu.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
-document.addEventListener('keydown', event => {
+menu.addEventListener('click', (event) => {
+  if (event.target.closest('a')) closeMenu();
+});
+document.addEventListener('keydown', (event) => {
   if (event.key !== 'Escape') return;
   const open = document.querySelector('details[open]');
-  if (open) { open.open = false; open.querySelector('summary').focus(); }
-  else if (toggle.getAttribute('aria-expanded') === 'true') { closeMenu(); toggle.focus(); }
+  if (open) {
+    open.open = false;
+    open.querySelector('summary').focus();
+  } else if (toggle.getAttribute('aria-expanded') === 'true') {
+    closeMenu();
+    toggle.focus();
+  }
 });
-document.addEventListener('click', event => {
-  document.querySelectorAll('details[open]').forEach(details => {
+document.addEventListener('click', (event) => {
+  document.querySelectorAll('details[open]').forEach((details) => {
     if (!details.contains(event.target)) details.open = false;
   });
 });
-document.querySelectorAll('[data-disclosure]').forEach(details => {
+document.querySelectorAll('[data-disclosure]').forEach((details) => {
   details.addEventListener('toggle', () => {
-    if (details.open) document.querySelectorAll('[data-disclosure][open]').forEach(other => {
-      if (other !== details) other.open = false;
-    });
+    if (details.open)
+      document.querySelectorAll('[data-disclosure][open]').forEach((other) => {
+        if (other !== details) other.open = false;
+      });
   });
 });
-document.querySelector('#suburb').addEventListener('input', event => {
+// ============================================================================
+// 03. FEATURED SUBURB FILTER
+// ============================================================================
+
+document.querySelector('#suburb').addEventListener('input', (event) => {
   const query = event.target.value.trim().toLowerCase();
   const items = [...document.querySelectorAll('[data-suburb]')];
-  items.forEach(item => { item.hidden = !item.dataset.suburb.toLowerCase().includes(query); });
-  document.querySelector('#suburb-empty').hidden = items.some(item => !item.hidden);
+  items.forEach((item) => {
+    item.hidden = !item.dataset.suburb.toLowerCase().includes(query);
+  });
+  document.querySelector('#suburb-empty').hidden = items.some((item) => !item.hidden);
 });
-document.querySelector('#page-search').addEventListener('submit', event => {
+// ============================================================================
+// 04. HOMEPAGE SEARCH
+// ============================================================================
+
+document.querySelector('#page-search').addEventListener('submit', (event) => {
   event.preventDefault();
   const query = document.querySelector('#search').value.trim().toLowerCase();
   if (!query) return;
-  const target = [...document.querySelectorAll('main h1, main h2, main h3, main p, .area-list a')].find(element => element.textContent.toLowerCase().includes(query));
-  document.querySelector('#search-status').textContent = target ? 'Match found on this homepage.' : 'No match in the current homepage preview.';
+  const target = [
+    ...document.querySelectorAll('main h1, main h2, main h3, main p, .area-list a'),
+  ].find((element) => element.textContent.toLowerCase().includes(query));
+  document.querySelector('#search-status').textContent = target
+    ? 'Match found on this homepage.'
+    : 'No match in the current homepage preview.';
   if (target) {
     const panel = target.closest('[role="tabpanel"]');
     if (panel) activateArea(document.querySelector(`[aria-controls="${panel.id}"]`));
@@ -87,11 +133,11 @@ document.querySelector('#page-search').addEventListener('submit', event => {
   }
 });
 
-const reviews = [
-  { name: 'Sarah M. Beal', image: 'sarah-m-beal.jpg', text: 'We had a blocked kitchen sink and called Big Blue Plumbing. They were friendly, professional and quick to respond. They fixed our problem promptly and charged a very reasonable price. I would definitely call them again if I needed any plumbing services.' },
-  { name: 'Patrick Capuano', image: 'patrick-capuano.jpg', text: 'I’m not going to lie, finding a plumber on the Sunshine Coast was hard, we had only just moved here. Luckily, I found Big Blue Plumbing who I couldn’t be happier with. They were quick, responsive & affordable and after the service was completed they cleaned up everything! We would recommend them to anyone!' },
-  { name: 'Hendrix Green', image: 'hendrix-green.jpg', text: 'Big Blue Plumbing was a lifesaver! My grandmother’s drain was clogged up and she didn’t know who could help her. So I Googled and found Big Blue Plumbing in Caloundra. They were able to come over in the same day, which was awesome because she just had knee surgery. We called them and they were able to help.' }
-];
+// ============================================================================
+// 05. REVIEW CAROUSEL AND MOTION PREFERENCES
+// ============================================================================
+
+const reviews = config.reviews;
 let current = 0;
 const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
 let paused = motion.matches;
@@ -104,35 +150,51 @@ function showReview(index) {
   document.querySelector('#review-avatar').src = imagePath(review.image);
   document.querySelector('#hero-review-name').textContent = review.name;
   document.querySelector('#hero-review-text').textContent = brandText(`“${review.text}”`);
-  document.querySelectorAll('[data-review]').forEach(button => button.setAttribute('aria-pressed', String(Number(button.dataset.review) === index)));
+  document
+    .querySelectorAll('[data-review]')
+    .forEach((button) =>
+      button.setAttribute('aria-pressed', String(Number(button.dataset.review) === index)),
+    );
 }
 function updatePause() {
   pauseButton.textContent = paused ? 'Play reviews' : 'Pause reviews';
   pauseButton.setAttribute('aria-pressed', String(paused));
 }
-document.querySelectorAll('[data-review]').forEach(button => button.addEventListener('click', () => {
-  showReview(Number(button.dataset.review));
-  paused = true;
+document.querySelectorAll('[data-review]').forEach((button) =>
+  button.addEventListener('click', () => {
+    showReview(Number(button.dataset.review));
+    paused = true;
+    updatePause();
+  }),
+);
+pauseButton.addEventListener('click', () => {
+  paused = !paused;
   updatePause();
-}));
-pauseButton.addEventListener('click', () => { paused = !paused; updatePause(); });
-motion.addEventListener('change', event => { paused = event.matches; updatePause(); });
+});
+motion.addEventListener('change', (event) => {
+  paused = event.matches;
+  updatePause();
+});
 updatePause();
 setInterval(() => {
-  if (!paused && !document.hidden && !document.querySelector('[data-carousel]:hover, [data-carousel]:focus-within')) showReview((current + 1) % reviews.length);
+  if (
+    !paused &&
+    !document.hidden &&
+    !document.querySelector('[data-carousel]:hover, [data-carousel]:focus-within')
+  )
+    showReview((current + 1) % reviews.length);
 }, 7000);
 
-document.querySelector('#quote-form').addEventListener('submit', event => {
-  event.preventDefault();
-  const status = document.querySelector('#quote-status');
-  status.hidden = false;
-  status.textContent = 'Demo only: your form is valid. No enquiry has been sent.';
-});
+// ============================================================================
+// 06. SERVICE CARD HOVER AND CLOSE CONTROLS
+// ============================================================================
 
 // Native details supports tap and keyboard; hover reveals cards on desktop.
 const hoverPointer = window.matchMedia('(hover: hover) and (pointer: fine)');
-document.querySelectorAll('[data-service-card]').forEach(card => {
-  card.addEventListener('pointerenter', () => { if (hoverPointer.matches) card.open = true; });
+document.querySelectorAll('[data-service-card]').forEach((card) => {
+  card.addEventListener('pointerenter', () => {
+    if (hoverPointer.matches) card.open = true;
+  });
   card.addEventListener('pointerleave', () => {
     if (hoverPointer.matches && !card.contains(document.activeElement)) card.open = false;
   });
@@ -142,10 +204,14 @@ document.querySelectorAll('[data-service-card]').forEach(card => {
   });
 });
 
+// ============================================================================
+// 07. SERVICE-AREA TABS AND KEYBOARD NAVIGATION
+// ============================================================================
+
 const areaTabs = [...document.querySelectorAll('[role="tab"]')];
 function activateArea(tab, focus = false) {
   if (!tab) return;
-  areaTabs.forEach(item => {
+  areaTabs.forEach((item) => {
     const selected = item === tab;
     item.setAttribute('aria-selected', String(selected));
     item.tabIndex = selected ? 0 : -1;
@@ -155,11 +221,23 @@ function activateArea(tab, focus = false) {
 }
 areaTabs.forEach((tab, index) => {
   tab.addEventListener('click', () => activateArea(tab));
-  tab.addEventListener('keydown', event => {
-    const targets = { ArrowDown: (index + 1) % areaTabs.length, ArrowUp: (index + areaTabs.length - 1) % areaTabs.length, Home: 0, End: areaTabs.length - 1 };
-    if (event.key in targets) { event.preventDefault(); activateArea(areaTabs[targets[event.key]], true); }
+  tab.addEventListener('keydown', (event) => {
+    const targets = {
+      ArrowDown: (index + 1) % areaTabs.length,
+      ArrowUp: (index + areaTabs.length - 1) % areaTabs.length,
+      Home: 0,
+      End: areaTabs.length - 1,
+    };
+    if (event.key in targets) {
+      event.preventDefault();
+      activateArea(areaTabs[targets[event.key]], true);
+    }
   });
 });
+// ============================================================================
+// 08. PROJECT GALLERY PAUSE CONTROL
+// ============================================================================
+
 const gallery = document.querySelector('.project-gallery');
 const galleryPause = document.querySelector('#gallery-pause');
 function setGalleryPaused(paused) {
@@ -169,14 +247,19 @@ function setGalleryPaused(paused) {
 }
 setGalleryPaused(motion.matches);
 galleryPause.addEventListener('click', () => setGalleryPaused(gallery.dataset.paused !== 'true'));
-motion.addEventListener('change', event => setGalleryPaused(event.matches));
-document.querySelectorAll('[data-demo-form]').forEach(form => {
-  form.addEventListener('submit', event => {
+motion.addEventListener('change', (event) => setGalleryPaused(event.matches));
+// ============================================================================
+// 09. QUOTE, CONTACT, AND NEWSLETTER FORMS — demo only
+// ============================================================================
+
+document.querySelectorAll('[data-demo-form]').forEach((form) => {
+  form.addEventListener('submit', (event) => {
     event.preventDefault();
     const status = form.querySelector('[data-form-status]');
     status.hidden = false;
-    status.textContent = form.id === 'newsletter-form'
-      ? 'Demo only: your email is valid. No subscription has been created.'
-      : 'Demo only: your form is valid. No enquiry has been sent.';
+    status.textContent =
+      form.id === 'newsletter-form'
+        ? 'Demo only: your email is valid. No subscription has been created.'
+        : 'Demo only: your form is valid. No enquiry has been sent.';
   });
 });

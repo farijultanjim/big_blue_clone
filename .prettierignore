@@ -1,0 +1,6 @@
+node_modules/
+assets/site.css
+assets/images/
+assets/fonts/
+.kilo/
+package-lock.json

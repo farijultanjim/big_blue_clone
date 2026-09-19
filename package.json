@@ -4,7 +4,9 @@
   "private": true,
   "description": "Static HTML homepage with locally compiled Tailwind CSS",
   "scripts": {
-    "check": "node --check assets/site.js && node --check assets/site-config.js && node reference/verify-homepage.mjs",
+    "format": "prettier --write index.html assets/site.js assets/site-config.js styles/theme.css scripts/check.mjs preview.mjs package.json README.md .prettierrc.json",
+    "format:check": "prettier --check index.html assets/site.js assets/site-config.js styles/theme.css scripts/check.mjs preview.mjs package.json README.md .prettierrc.json",
+    "check": "node --check assets/site.js && node --check assets/site-config.js && node scripts/check.mjs",
     "start": "node preview.mjs",
     "build": "tailwindcss -i ./styles/theme.css -o ./assets/site.css --minify",
     "watch": "tailwindcss -i ./styles/theme.css -o ./assets/site.css --watch"
@@ -12,6 +14,7 @@
   "devDependencies": {
     "@tailwindcss/cli": "4.3.3",
     "linkedom": "0.18.13",
+    "prettier": "3.9.8",
     "tailwindcss": "4.3.3"
   }
 }
